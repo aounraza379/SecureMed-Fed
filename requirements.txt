@@ -4,3 +4,4 @@ flask
 streamlit
 plotly
 pyngrok
+streamlit-autorefresh

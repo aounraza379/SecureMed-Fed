@@ -36,3 +36,8 @@ def verify_emergency_proof(proof_packet, original_commitment):
         proof_packet["verification_status"] = "INVALID_PROOF"
 
     return proof_packet
+
+def generate_zkp_proof(magnitude, timestamp):
+    secret_key = "MS_CANDIDATE_2026"
+    commitment = hashlib.sha256(f"{magnitude}{secret_key}{timestamp}".encode()).hexdigest()
+    return commitment

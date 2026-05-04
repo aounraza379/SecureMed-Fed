@@ -23,3 +23,7 @@ def generate_secure_update(heart_rate_column):
         "integrity_hash": data_hash,
         "status": "Anomaly_Detected" if local_mean > 110 else "Normal"
     }
+
+def apply_privacy_mask(value):
+    noise = np.random.normal(0, 0.1)
+    return value + noise

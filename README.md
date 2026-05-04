@@ -25,4 +25,4 @@ Traditional remote monitoring systems are vulnerable to data breaches. SecureMed
 - Implementation of Multi-Agent Systems (Agentic AI) for autonomous emergency dispatch.
 
 ---
-*Developed as a foundational research project for Master of Science (MS) candidacy in Information Technology.*
+*Developed by Aoun Raza.*
