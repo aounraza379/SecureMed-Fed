@@ -52,7 +52,7 @@ The server will print your local IP address:
   Status check   : http://192.168.x.x:5000/status
   Movement threshold : 12.0 m/s²
 
-  👉  Configure Sensor Logger:
+  Configure Sensor Logger:
       URL    → http://192.168.x.x:5000/
       Method → POST
       Sensor → Accelerometer  (interval: 100 ms)
@@ -85,7 +85,7 @@ streamlit run dashboard.py
 |---------|---------------|
 | **Zero-Knowledge Proof** | HMAC-SHA256 keyed with `SECMED_SECRET_KEY` |
 | **Differential Privacy** | Laplace mechanism with configurable ε |
-| **Live ZKP Verification** | Dashboard re-derives HMAC for each alert — shows ✅/❌ |
+| **Live ZKP Verification** | Dashboard re-derives HMAC for each alert |
 | **Thread-safe storage** | `threading.Lock` prevents JSON corruption |
 | **CORS** | `flask-cors` allows cross-origin sensor clients |
 

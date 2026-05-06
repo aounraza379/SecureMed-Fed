@@ -43,8 +43,8 @@ def verify_zkp_proof(magnitude: float, timestamp: str, proof: str) -> bool:
     """
     Verify a previously generated ZKP proof.
 
-    Returns True  → data is authentic and unmodified (VERIFIED ✅)
-    Returns False → proof is invalid or data was tampered (INVALID ❌)
+    Returns True  → data is authentic and unmodified (VERIFIED)
+    Returns False → proof is invalid or data was tampered (INVALID)
     """
     expected = generate_zkp_proof(magnitude, timestamp)
     # Use hmac.compare_digest to prevent timing-attack leaks
