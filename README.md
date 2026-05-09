@@ -32,8 +32,8 @@ pip install -r requirements.txt
 # PowerShell
 $env:SECMED_SECRET_KEY = "your-strong-secret-key"
 
-# Optional: override anomaly threshold (default 12.0 m/s²)
-$env:SECMED_THRESHOLD = "12.0"
+# Optional: override anomaly threshold (default 13.0 m/s²)
+$env:SECMED_THRESHOLD = "13.0"
 
 # Optional: override privacy budget (default 0.5)
 $env:SECMED_EPSILON = "0.5"
@@ -116,7 +116,7 @@ Sensor Logger sends accelerometer values in **m/s²** (SI units):
 | Brisk walk / movement | ≈ 11–14 m/s² |
 | Shake / fall event | > 15 m/s² |
 
-Default threshold: **12.0 m/s²** — override with `SECMED_THRESHOLD` env var.
+Default threshold: **13.0 m/s²** — override with `SECMED_THRESHOLD` env var.
 
 ---
 
